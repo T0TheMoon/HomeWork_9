@@ -26,7 +26,7 @@ def add_contact(name, phone):
 def change_phone(name, phone):
     if name not in phonebook:
         raise KeyError  # Піднімаємо помилку, якщо контакт з таким ім'ям не існує.
-    else:  
+    else:
         phonebook[name] = phone
         return f"Phone number for {name} has been changed to {phone}."  # Повідомляємо користувача про успішну зміну номера.
 
